@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 char *TARGET = "/home/dell/jit/dotfiles";
-char *TARGET_TEST = "/home/dell/target";
+char *TARGET_TEST = "/home/dell/learndev/c/backdots/test/target";
 
 char *list_dir[] = {
     "/home/dell/.config/mpd",
@@ -22,10 +22,10 @@ char *list_dir[] = {
 };
 
 char *list_test[] = {
-  "/home/dell/dummy/mpd",
-  "/home/dell/dummy/ncmpcpp",
-  "/home/dell/dummy/here.txt",
-  "/home/dell/dummy/hypr",
+  "/home/dell/learndev/c/backdots/test/dummy/mpd",
+  "/home/dell/learndev/c/backdots/test/dummy/ncmpcpp",
+  "/home/dell/learndev/c/backdots/test/dummy/here.txt",
+  "/home/dell/learndev/c/backdots/test/dummy/hypr",
 };
 
 void backup();
