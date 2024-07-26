@@ -29,6 +29,8 @@ char *quotes[] = {
     "Oh, my sweet summer child, What do you know of fear?",
     "Dance with me then",
     "An idiot admires complexity, a genius admires simplicity",
+    "It'll all be yesteryear soon",
+    "A little less than a human being",
 };
 
 int main() {

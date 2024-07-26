@@ -4,5 +4,5 @@ CFLAGS=-Wall -W -pedantic -std=gnu11 `pkg-config --cflags --libs glib-2.0 gtk+-2
 
 build: ./main.c
 	$(CC) $(CFLAGS) -o /home/dell/bin/backdots main.c
-	/home/dell/bin/backdots daemon
+	/home/dell/bin/backdots
 

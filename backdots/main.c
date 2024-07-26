@@ -17,6 +17,7 @@ char *list_dir[] = {
     "/home/dell/.config/mpd",
     "/home/dell/.config/ncmpcpp",
     "/home/dell/.config/hypr",
+    "/home/dell/.config/waybar",
     "/home/dell/.config/vimium.css",
     "/home/dell/.config/starship.toml",
     "/home/dell/.config/tmux",
@@ -47,30 +48,36 @@ int main(int argc, char **argv) {
   signal(SIGINT, signal_handler);
   signal(SIGHUP, signal_handler);
 
-  if (argc == 2 && !strcmp(argv[1], "daemon")) {
+  if (argc > 1 && !strcmp(argv[1], "daemon")) {
     printf("starting daemon\n");
 
     while (true) {
       if (!check_run()) {
         printf("already ran today\n");
+        sleep(24 * 60 * 60);
       } else {
         printf("starting backup in 10 minutes\n");
         NotifyNotification *warnNotif = warn("backdots warning", "Starting dotfiles backup in 10 min\n$(~/bin/canback.sh) to cancel", 1000 * 60 * 5);
         sleep(10 * 60);
 
         if (is_cancelled) {
+
           notify_notification_close(warnNotif, NULL);
           warn("backdots", "backup cancelled", 1000 * 5);
           printf("backup cancelled\n");
           is_cancelled = false;
+          sleep(6 * 60 * 60);
+
         } else {
+
           printf("backup starting...\n");
           backup();
           printf("backup complete\n");
           log_date();
+          sleep(24 * 60 * 60);
+
         }
       }
-      sleep(6 * 60 * 60);
     }
 
     return 0;
