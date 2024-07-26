@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+#variables
+stat_charge() {
+   cat "/sys/class/power_supply/BAT0/status"
+}
+
+per_charge() {
+   cat "/sys/class/power_supply/BAT0/capacity"
+}
+
+#icons
+bat_icon() {
+   if [ $(stat_charge) == Discharging ]; then
+       if [ $(per_charge) -le 10 ]; then
+          echo ""
+       elif [ $(per_charge) -gt 10 ] && [ $(per_charge) -le 40 ]; then
+          echo ""
+       elif [ $(per_charge) -gt 40 ] && [ $(per_charge) -le 60 ]; then
+          echo ""
+       elif [ $(per_charge) -gt 60 ] && [ $(per_charge) -le 90 ]; then
+          echo ""
+       elif [ $(per_charge) -gt 90 ] && [ $(per_charge) -le 100 ]; then
+          echo ""    
+       fi
+   else
+       echo "" 
+   fi
+}
+
+vol_icon() {
+   
+   if [ $(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}' | tr -d '\n') == no ]; then
+      echo "墳"
+   else
+      echo "ﱝ"
+   fi
+}
+
+#modules
+battery_mod() {
+   echo "$(bat_icon) $(per_charge)%"
+}
+
+datetime_mod() {
+   date +' %b %d %R'
+}
+
+mem_mod() {
+   echo " $(echo $(free -h) | awk -F" " '{ print $9 }')"
+}
+
+vol_mod() {
+    echo "$(vol_icon) $(pactl get-sink-volume @DEFAULT_SINK@ | awk -F"/" '{ print $2 }' |tr -d ' ')"
+}
+
+#status
+echo " $(mem_mod) | $(battery_mod) | $(vol_mod) | $(datetime_mod)";

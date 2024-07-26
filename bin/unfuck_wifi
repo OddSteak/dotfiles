@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if journalctl -b -p 3 | grep -q 'ath10k_pci'; then
+
+sudo modprobe -r ath10k_pci && sudo modprobe ath10k_pci && sudo systemctl restart NetworkManager
+fi

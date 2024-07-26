@@ -1,0 +1,10 @@
+command_timeout = 500 # 1010 if you enable git_status
+
+[python]
+symbol = '󰌠 '
+
+[git_status]
+disabled = true
+
+[rlang]
+symbol = '  '

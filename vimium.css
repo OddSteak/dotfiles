@@ -1,0 +1,104 @@
+/* #ui */
+
+.D > .LH {
+	background: #181825;
+	color: #cdd6f4;
+	border: none;
+}
+
+/* #omni */
+
+.mono-url {
+	left: calc(20vw - 12px);
+	width: calc(60vw + 24px);
+    position: relative;
+    /*
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    */
+}
+
+body {
+    border-radius: 16rem;
+}
+
+body::after {
+    border: none;
+}
+
+.undo {
+    display: none;
+}
+
+#toolbar {
+    display: none;
+}
+
+.history {
+    display: none;
+}
+
+.icon {
+    display: none;
+}
+
+match {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e0def4;
+}
+
+.title > match {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e0def4;
+}
+
+#bar {
+    border-radius: 16rem 16rem 0 0;
+    border-bottom: 1rem solid #333;
+    background: #000;
+}
+
+#input {
+    color: #d4be98;
+    padding: none;
+    box-shadow: none;
+    border-color: none;
+    border-color: #000000;
+}
+
+.bottom {
+    margin-left: 5rem;
+}
+
+.top {
+    color: #e0def4;
+}
+
+a {
+    color: #575279;
+}
+
+.item {
+    height: 50rem;
+}
+
+.item:hover {
+    background-color: #232136;
+}
+
+.item.s {
+    background-color: #232136;
+}
+
+.top {
+    color: #d4be98;
+}
+
+/* #find */
+
+/* #find:host */
+
+/* #find:selection */
