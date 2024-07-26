@@ -1,7 +1,8 @@
 CC=gcc
-CFLAGS=-Wall -W -pedantic -std=c11
+CFLAGS=-Wall -W -pedantic -std=gnu11 `pkg-config --cflags --libs glib-2.0 gtk+-2.0` -lnotify
+
 
 build: ./main.c
-	$(CC) $(CFLAGS) -o main main.c
-	./main
+	$(CC) $(CFLAGS) -o /home/dell/bin/backdots main.c
+	/home/dell/bin/backdots daemon
 
