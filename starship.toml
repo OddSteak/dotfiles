@@ -8,3 +8,6 @@ disabled = true
 
 [rlang]
 symbol = '  '
+
+[rust]
+symbol = ' '

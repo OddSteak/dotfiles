@@ -25,6 +25,7 @@ char *list_dir[] = {
     "/home/dell/.bashrc",
     "/home/dell/learndev/c/backdots",
     "/home/dell/learndev/c/splash",
+    "/home/dell/learndev/c/mm",
 };
 
 char *list_test[] = {
@@ -129,8 +130,8 @@ void rec_dir(char *dir_src, char *dir_dst) {
     }
 
     if (entry->d_type == DT_REG) {
-      char source_file[strlen(dir_src) + 1 + strlen(entry->d_name) + 1 + 1];
-      char dst_file[strlen(dir_dst) + 1 + strlen(entry->d_name) + 1 + 1];
+      char source_file[strlen(dir_src) + strlen(entry->d_name) + 1 + 1];
+      char dst_file[strlen(dir_dst) + strlen(entry->d_name) + 1 + 1];
 
       strcat(strcat(strcpy(source_file, dir_src), "/"), entry->d_name);
       strcat(strcat(strcpy(dst_file, dir_dst), "/"), entry->d_name);
@@ -138,8 +139,8 @@ void rec_dir(char *dir_src, char *dir_dst) {
       copy_file(source_file, dst_file);
 
     } else if (entry->d_type == DT_DIR) {
-      char source_dir[strlen(dir_src) + 1 + strlen(entry->d_name) + 1 + 1];
-      char dst_dir[strlen(dir_dst) + 1 + strlen(entry->d_name) + 1 + 1];
+      char source_dir[strlen(dir_src) + strlen(entry->d_name) + 1 + 1];
+      char dst_dir[strlen(dir_dst) +  strlen(entry->d_name) + 1 + 1];
 
       strcat(strcat(strcpy(source_dir, dir_src), "/"), entry->d_name);
       strcat(strcat(strcpy(dst_dir, dir_dst), "/"), entry->d_name);
