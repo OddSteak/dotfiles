@@ -64,6 +64,7 @@
         "format": "{}",
         "rewrite": {
             "(.*) — Mozilla Firefox": "$1 · 󰈹",
+            "(.*) - Youtube — Mozilla Firefox": "$1 · 󰗃 ",
             "(.*) - Discord": "$1 ·  ",
             "/home/dell(.*)": "~$1",
         },
@@ -103,7 +104,7 @@
     "clock": {
         // "timezone": "America/New_York",
         "format": "󰥔 {:%H:%M   %a %d}",
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {

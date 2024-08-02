@@ -7,6 +7,8 @@
 #include <time.h>
 #include <unistd.h>
 
+#define MAX_RUN_CMD_LENGTH 1024
+
 struct timespec lastmoddedtimes = {.tv_sec = 0, .tv_nsec = 0};
 char *lastmoddedpath;
 char *lastmoddeddir;
@@ -14,17 +16,15 @@ char *lastmoddedname;
 
 void rec_dir(char *dir);
 void write_makefile(char *path);
-void makefile(char *dir, char *name);
+void makefile(char *dir, char *stripped_name, int argc, char **argv);
 void stripname(char *name, char *buf);
 
-int main() {
+int main(int ac, char **av) {
   rec_dir(getcwd(NULL, 50));
-
-  printf("making %s\n\n", lastmoddedpath);
 
   char strippedname[strlen(lastmoddedname) - 2 + 1];
   stripname(lastmoddedname, strippedname);
-  makefile(lastmoddeddir, strippedname);
+  makefile(lastmoddeddir, strippedname, ac, av);
   return 0;
 }
 
@@ -60,8 +60,9 @@ void rec_dir(char *dir) {
           (statbuf.st_mtim.tv_sec == lastmoddedtimes.tv_sec &&
            statbuf.st_mtim.tv_nsec > lastmoddedtimes.tv_nsec)) {
         lastmoddedtimes = statbuf.st_mtim;
+
         free(lastmoddedpath);
-        lastmoddedpath = (char *)malloc((strlen(path) + 1) * sizeof(char));
+        lastmoddedpath = (char *)malloc((strlen(path) + 1));
         strcpy(lastmoddedpath, path);
 
         free(lastmoddeddir);
@@ -92,7 +93,7 @@ void stripname(char *name, char *buf) {
     exit(1);
   }
 
-  for (int i = 0; i < (int) strlen(name) - 2 + 1; i++) {
+  for (int i = 0; i < (int)strlen(name) - 2 + 1; i++) {
     if (i == (int)strlen(name) - 2)
       buf[i] = 0;
     else
@@ -100,39 +101,55 @@ void stripname(char *name, char *buf) {
   }
 }
 
-void makefile(char *dir, char *name) {
+void makefile(char *dir, char *stripped_name, int ac, char **av) {
   chdir(dir);
 
   char makepath[strlen(dir) + 10];
 
   strcat(strcat(strcpy(makepath, dir), "/"), "Makefile");
 
-  struct stat statbuf;
-
-  if (stat(makepath, &statbuf) == -1) {
+  if (access(makepath, F_OK)) {
     mkdir("builds", 0755);
     write_makefile(makepath);
   }
 
-  char makecmd[strlen(name) + 6];
-  strcat(strcpy(makecmd, "make "), name);
+  char makecmd[strlen(stripped_name) + 6];
+  strcat(strcpy(makecmd, "make "), stripped_name);
+
   system(makecmd);
-  return;
+
+  char run_cmd[MAX_RUN_CMD_LENGTH];
+  strcat(strcpy(run_cmd, "./builds/"), stripped_name);
+
+  if (access(run_cmd, F_OK)) {
+    return;
+  }
+
+  if (ac > 1) {
+    for (int i = 1; i < ac; i++) {
+      if ((strlen(run_cmd) + strlen(av[i]) + 2) >= MAX_RUN_CMD_LENGTH) {
+        fprintf(stderr, "mm ERROR: arguments too big\n");
+        exit(EXIT_FAILURE);
+      }
+      strcat(strcat(run_cmd, " "), av[i]);
+    }
+  }
+
+  system(run_cmd);
 }
 
 void write_makefile(char *path) {
   printf("Makefile not found, writing default\n");
-  FILE *mkfile = fopen(path, "w");
 
   char *flags = "CC=gcc\nCFLAGS=-Wall -W -pedantic -ansi -std=c11\n\n";
   char *target = "%: %.c\n\t$(CC) $(CFLAGS) -o ";
-  char *build_path = "builds/$@ $<\n\t";
-  char *execute = "builds/$@";
+  char *build_path = "builds/$@ $<";
+
+  FILE *mkfile = fopen(path, "w");
 
   fputs(flags, mkfile);
   fputs(target, mkfile);
   fputs(build_path, mkfile);
-  fputs(execute, mkfile);
 
   fclose(mkfile);
 }

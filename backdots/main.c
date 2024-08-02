@@ -20,6 +20,7 @@ char *list_dir[] = {
     "/home/dell/.config/waybar",
     "/home/dell/.config/vimium.css",
     "/home/dell/.config/starship.toml",
+    "/home/dell/.config/kitty",
     "/home/dell/.config/tmux",
     "/home/dell/bin",
     "/home/dell/.bashrc",

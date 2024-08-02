@@ -31,6 +31,8 @@ char *quotes[] = {
     "An idiot admires complexity, a genius admires simplicity",
     "It'll all be yesteryear soon",
     "A little less than a human being",
+    "Abandon All Hope, Ye Who Enter Here",
+    "To rice, or not to rice, that is the question",
 };
 
 int main() {
@@ -39,3 +41,4 @@ int main() {
     printf("%s", quotes[random_num]);
     return 0;
 }
+

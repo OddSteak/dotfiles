@@ -2,10 +2,7 @@
 # ~/.bashrc
 #
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-PS1='[\u@\h \W]\$ '
+export PATH="/home/dell/bin:$PATH"
 
 # themes
 eval "$(starship init bash)"
@@ -25,10 +22,12 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # programs
+alias ff=fastfetch
+alias gs='git status'
+alias g="git"
 alias lg="lazygit"
 alias wman=w3mman
 
-export PATH="/home/dell/bin:$PATH"
 
 # functions
 fvsd() {
@@ -128,9 +127,6 @@ share() {
 fpatch() {
   fontforge --script ~/.config/fontpatcher/font-patcher --complete "$1"
 }
-
-alias ff=fastfetch
-alias gs='git status'
 
 zat() {
     zathura "$1" &
