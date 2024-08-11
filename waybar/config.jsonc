@@ -66,6 +66,7 @@
             "(.*) — Mozilla Firefox": "$1 · 󰈹",
             "(.*) - Youtube — Mozilla Firefox": "$1 · 󰗃 ",
             "(.*) - Discord": "$1 ·  ",
+            "Wayland to X Recording bridge — Xwayland Video Bridge": "",
             "/home/dell(.*)": "~$1",
         },
     },
@@ -182,7 +183,7 @@
         "on-click-right": "pavucontrol"
     },
     "custom/media": {
-        "format": "{icon} {}",
+        "format": "{}",
         "interval": 2,
         "return-type": "string",
         "max-length": 40,

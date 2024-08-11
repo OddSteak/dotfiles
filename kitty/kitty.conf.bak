@@ -22,9 +22,8 @@ placement_strategy top-left
 
 mouse_hide_wait -3.0
 
-background_opacity 0.85
+background_opacity 0.70
 # foreground #d4be98
-# background #000000
 
 text_composition_strategy legacy
 

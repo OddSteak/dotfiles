@@ -1,12 +1,23 @@
 #!/bin/sh
 
-artist=$(playerctl metadata artist 2>/dev/null)
-title=$(playerctl metadata title 2>/dev/null)
+title=$(playerctl -p spotify metadata title 2>/dev/null)
+artist=$(playerctl -p spotify metadata artist 2>/dev/null)
 
-if [[ $? == 1 ]]
-then
+if [ $? -ne 0 ]; then # spotify not running
+    title=$(playerctl metadata title 2>/dev/null)
+    artist=$(playerctl metadata artist 2>/dev/null)
+    if [ $? -ne 0 ]; then
+        exit 1
+    elif [ "$artist" != "" ]; then
+        echo -n "  $artist · $title"
+    else
+        echo -n "  $title"
+    fi
+elif [ "$artist" != "" ]; then
+    echo -n "  $artist · $title"
+elif [ "$title" != "" ]; then
+    echo -n "  $title"
+else  # spot not running
     exit 1
-else
-    echo -n "$title · $artist"
 fi
 

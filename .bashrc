@@ -9,6 +9,7 @@ eval "$(starship init bash)"
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
 
 shopt -s globstar
+shopt -s extglob
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 
@@ -27,7 +28,9 @@ alias gs='git status'
 alias g="git"
 alias lg="lazygit"
 alias wman=w3mman
-
+alias py=python
+alias jn='jupyter-notebook'
+alias zel='zellij'
 
 # functions
 fvsd() {
