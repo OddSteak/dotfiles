@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-char *quotes[] = {
+char* quotes[] = {
     "I see a red door and I want it painted black.",
     "Stayin' alive, stayin' alive",
     "Is this the real life, is this just fantasy",
@@ -19,12 +19,16 @@ char *quotes[] = {
     "\"my win11 install runs hyprland that is true\" - raf",
     "Choosing…it has always hurt. And always will.",
     "Black and white and grey, all the shades of truth.",
-    "When the snows fall and the white winds blow,\n  the lone wolf dies, but the pack survives",
-    "The Drowned God did not answer. He seldom did.\n\tThat was the trouble with gods.",
-    "There was no slavery in the free city of Pentos.\n\tNonetheless, they were slaves.",
+    "When the snows fall and the white winds blow,\n  the lone wolf dies, but "
+        "the pack survives",
+    "The Drowned God did not answer. He seldom did.\n\tThat was the trouble "
+        "with gods.",
+    "There was no slavery in the free city of Pentos.\n\tNonetheless, they "
+        "were slaves.",
     "\"Edd, fetch me a block\" - Jon Snow",
     "Egg, I dreamed that I was old.",
-    "Almost dead yesterday, maybe dead tomorrow,\n   but alive, gloriously alive, today.",
+    "Almost dead yesterday, maybe dead tomorrow,\n   but alive, gloriously "
+        "alive, today.",
     "Take what you want, and pay for it.",
     "Oh, my sweet summer child, What do you know of fear?",
     "Dance with me then",
@@ -35,10 +39,10 @@ char *quotes[] = {
     "To rice, or not to rice, that is the question",
 };
 
-int main() {
+int main()
+{
     srand(time(NULL));
-    int random_num = rand() % (sizeof(quotes)/sizeof(quotes[0]));
+    int random_num = rand() % (sizeof(quotes) / sizeof(quotes[0]));
     printf("%s", quotes[random_num]);
     return 0;
 }
-

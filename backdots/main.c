@@ -22,6 +22,8 @@ char* list_dir[] = {
     "/home/dell/.config/starship.toml",
     "/home/dell/.config/kitty",
     "/home/dell/.config/tmux",
+    "/home/dell/.config/wofi",
+    "/home/dell/.config/fontconfig",
     "/home/dell/bin",
     "/home/dell/.bashrc",
     "/home/dell/learndev/c/backdots",

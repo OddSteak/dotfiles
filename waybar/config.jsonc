@@ -12,7 +12,6 @@
         // "custom/media"
     ],
     // "modules-center": [
-    //     "hyprland/window"
     // ],
     "modules-right": [
         "custom/media",
