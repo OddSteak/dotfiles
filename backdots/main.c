@@ -14,6 +14,7 @@ char* TARGET_TEST = "/home/dell/learndev/c/backdots/test/target";
 
 char* list_dir[] = {
     "/home/dell/.config/pkglist.txt",
+    "/home/dell/.config/nativepkg.txt",
     "/home/dell/.config/mpd",
     "/home/dell/.config/ncmpcpp",
     "/home/dell/.config/hypr",
@@ -24,6 +25,9 @@ char* list_dir[] = {
     "/home/dell/.config/tmux",
     "/home/dell/.config/wofi",
     "/home/dell/.config/fontconfig",
+    "/home/dell/.config/gtk-3.0",
+    "/home/dell/.config/dunst",
+    "/home/dell/.config/nsxiv",
     "/home/dell/bin",
     "/home/dell/.bashrc",
     "/home/dell/learndev/c/backdots",
@@ -97,6 +101,7 @@ int main(int argc, char** argv)
 void backup()
 {
     system("pacman -Qqe > /home/dell/.config/pkglist.txt");
+    system("pacman -Qqen > /home/dell/.config/nativepkg.txt");
     for (long unsigned i = 0; i < sizeof(list_dir) / sizeof(list_dir[0]); i++) {
         int delim;
 
