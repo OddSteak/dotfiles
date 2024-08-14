@@ -1,4 +1,6 @@
 #include <dirent.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,7 +18,7 @@ char* lastmoddedname;
 
 void rec_dir(char* dir);
 void write_makefile(char* path);
-void makefile(char* dir, char* stripped_name, int argc, char** argv);
+void makefile(char* dir, char* stripped_name, char** argv);
 void stripname(char* name, char* buf);
 
 int main(int ac, char** av)
@@ -25,7 +27,7 @@ int main(int ac, char** av)
 
     char strippedname[strlen(lastmoddedname) - 2 + 1];
     stripname(lastmoddedname, strippedname);
-    makefile(lastmoddeddir, strippedname, ac, av);
+    makefile(lastmoddeddir, strippedname, av);
     return 0;
 }
 
@@ -104,7 +106,7 @@ void stripname(char* name, char* buf)
     }
 }
 
-void makefile(char* dir, char* stripped_name, int ac, char** av)
+void makefile(char* dir, char* stripped_name, char** av)
 {
     chdir(dir);
 
@@ -117,29 +119,32 @@ void makefile(char* dir, char* stripped_name, int ac, char** av)
         write_makefile(makepath);
     }
 
-    char makecmd[strlen(stripped_name) + 6];
-    strcat(strcpy(makecmd, "make "), stripped_name);
+    int status;
+    pid_t makepid = fork();
 
-    system(makecmd);
+    if (makepid == 0) {
+        char *args[] = { "make", stripped_name, NULL};
+        execvp("/usr/bin/make", args);
+        printf("mm: skill issues\n");
+    } else {
+        wait(&status);
+    }
 
-    char run_cmd[MAX_RUN_CMD_LENGTH];
+    char run_cmd[strlen(stripped_name) + 10];
     strcat(strcpy(run_cmd, "./builds/"), stripped_name);
 
     if (access(run_cmd, F_OK)) {
         return;
     }
 
-    if (ac > 1) {
-        for (int i = 1; i < ac; i++) {
-            if ((strlen(run_cmd) + strlen(av[i]) + 2) >= MAX_RUN_CMD_LENGTH) {
-                fprintf(stderr, "mm ERROR: arguments too big\n");
-                exit(EXIT_FAILURE);
-            }
-            strcat(strcat(run_cmd, " "), av[i]);
-        }
-    }
+    pid_t pid = fork();
 
-    system(run_cmd);
+    if (pid == 0) {
+        execvp(run_cmd, av);
+        printf("skill issues\n");
+    } else {
+        wait(&status);
+    }
 }
 
 void write_makefile(char* path)

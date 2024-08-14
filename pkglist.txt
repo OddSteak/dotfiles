@@ -38,6 +38,7 @@ firewalld
 fontforge
 fzf
 gdb
+gdu
 gimp
 git
 gnome-keyring
@@ -186,3 +187,4 @@ zathura-pdf-poppler
 zed
 zellij
 zig
+zsh

@@ -46,7 +46,7 @@ bool is_cancelled = false;
 
 void backup();
 void rec_dir(char* dir_src, char* dir_dst);
-int copy_file(char* source_file, char* dst_file);
+void copyfile(char* source_file, char* dst_file);
 NotifyNotification* warn(char* title, char* message, int timeout);
 void log_date();
 bool check_run();
@@ -119,7 +119,7 @@ void backup()
         stat(list_dir[i], &buf);
 
         if (S_ISREG(buf.st_mode)) {
-            copy_file(list_dir[i], final_target);
+            copyfile(list_dir[i], final_target);
         } else {
             rec_dir(list_dir[i], final_target);
         }
@@ -149,7 +149,7 @@ void rec_dir(char* dir_src, char* dir_dst)
             strcat(strcat(strcpy(source_file, dir_src), "/"), entry->d_name);
             strcat(strcat(strcpy(dst_file, dir_dst), "/"), entry->d_name);
 
-            copy_file(source_file, dst_file);
+            copyfile(source_file, dst_file);
 
         } else if (entry->d_type == DT_DIR) {
             char source_dir[strlen(dir_src) + strlen(entry->d_name) + 1 + 1];
@@ -168,24 +168,31 @@ void rec_dir(char* dir_src, char* dir_dst)
     closedir(dstream);
 }
 
-int copy_file(char* source_file, char* dst_file)
+void copyfile(char* source, char* destination)
 {
+    FILE* fp_in = fopen(source, "rb");
+    FILE* fp_out = fopen(destination, "wb");
 
-    FILE* src_cp = fopen(source_file, "r");
-    FILE* dst_cp = fopen(dst_file, "w");
+    if (fp_in != NULL && fp_out != NULL) {
+        char buffer[BUFSIZ];
+        size_t got, wrote;
 
-    char buf_cp[50];
+        while ((got = fread(buffer, 1, sizeof buffer, fp_in)) > 0) {
+            wrote = fwrite(buffer, 1, got, fp_out);
+            if (wrote != got) {
+                fprintf(stdout, "error copying file\n");
+                fprintf(stdout, "%s -> %s\n",  source, destination);
+            }
+        }
+    }
 
-    while (fgets(buf_cp, 50, src_cp) != NULL) {
-        fputs(buf_cp, dst_cp);
-    };
-
-    fclose(src_cp);
-    fclose(dst_cp);
-
-    return 0;
+    if (fp_in != NULL) {
+        fclose(fp_in);
+    }
+    if (fp_out != NULL) {
+        fclose(fp_out);
+    }
 }
-
 NotifyNotification* warn(char* title, char* message, int timeout)
 {
     notify_init("backdots");
