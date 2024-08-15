@@ -119,7 +119,7 @@ void makefile(char* dir, char* stripped_name, char** av)
         write_makefile(makepath);
     }
 
-    int status;
+    int status = 0;
     pid_t makepid = fork();
 
     if (makepid == 0) {
@@ -130,20 +130,23 @@ void makefile(char* dir, char* stripped_name, char** av)
         wait(&status);
     }
 
-    char run_cmd[strlen(stripped_name) + 10];
-    strcat(strcpy(run_cmd, "./builds/"), stripped_name);
+    if (WIFEXITED(status) && WEXITSTATUS(status) == 0) {
+        printf("make successful\n");
+        char run_cmd[strlen(stripped_name) + 10];
+        strcat(strcpy(run_cmd, "./builds/"), stripped_name);
 
-    if (access(run_cmd, F_OK)) {
-        return;
-    }
+        if (access(run_cmd, F_OK)) {
+            return;
+        }
 
-    pid_t pid = fork();
+        pid_t pid = fork();
 
-    if (pid == 0) {
-        execvp(run_cmd, av);
-        printf("skill issues\n");
-    } else {
-        wait(&status);
+        if (pid == 0) {
+            execvp(run_cmd, av);
+            printf("skill issues\n");
+        } else {
+            wait(&status);
+        }
     }
 }
 

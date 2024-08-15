@@ -24,7 +24,6 @@ compiledb
 cowsay
 deluge
 deluge-gtk
-discord
 dmenu
 dos2unix
 dunst
@@ -95,8 +94,7 @@ noto-fonts-lite
 npm
 nsxiv
 ntfs-3g
-nvidia-550xx-dkms
-nvidia-550xx-utils
+nvidia-beta-dkms
 nwg-look
 obs-studio
 obsidian
@@ -174,7 +172,7 @@ wofi
 wofi-emoji
 xclip
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
+xdg-desktop-portal-hyprland-git
 xdotool
 xfconf
 xorg-xhost

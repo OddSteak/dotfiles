@@ -1,9 +1,8 @@
 /* #ui */
-
 .D > .LH {
 	background: #181825;
 	color: #cdd6f4;
-	border: none;
+    border-color: #524f67;
 }
 
 /* #omni */
@@ -21,10 +20,14 @@
 
 body {
     border-radius: 16rem;
+    border-color: #524f67;
+    border-collapse: seperate;
 }
 
 body::after {
-    border: none;
+    border-radius: 16rem;
+    border-color: #524f67;
+    border-collapse: seperate;
 }
 
 .undo {
@@ -57,16 +60,18 @@ match {
 
 #bar {
     border-radius: 16rem 16rem 0 0;
+    border-color: #524f67;
+    border-collapse: seperate;
     border-bottom: 1rem solid #333;
-    background: #000;
+    background: #191724;
 }
 
 #input {
-    color: #d4be98;
+    color: #e0def4;
     padding: none;
     box-shadow: none;
-    border-color: none;
-    border-color: #000000;
+    /* border-color: #191724; */
+    background-color: #191724;
 }
 
 .bottom {
@@ -83,18 +88,19 @@ a {
 
 .item {
     height: 50rem;
+    background-color: #191724;
 }
 
 .item:hover {
-    background-color: #232136;
+    background-color: #403d52;
 }
 
 .item.s {
-    background-color: #232136;
+    background-color: #403d52;
 }
 
 .top {
-    color: #d4be98;
+    color: #e0def4;
 }
 
 /* #find */

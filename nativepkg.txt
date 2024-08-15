@@ -17,7 +17,6 @@ cliphist
 cowsay
 deluge
 deluge-gtk
-discord
 dmenu
 dos2unix
 dunst
@@ -145,7 +144,6 @@ wl-clipboard
 wofi
 xclip
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
 xdotool
 xfconf
 xorg-xhost
