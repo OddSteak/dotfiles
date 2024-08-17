@@ -131,7 +131,6 @@ void makefile(char* dir, char* stripped_name, char** av)
     }
 
     if (WIFEXITED(status) && WEXITSTATUS(status) == 0) {
-        printf("make successful\n");
         char run_cmd[strlen(stripped_name) + 10];
         strcat(strcpy(run_cmd, "./builds/"), stripped_name);
 

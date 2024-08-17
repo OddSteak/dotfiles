@@ -14,14 +14,12 @@ brightnessctl
 btop
 clang
 cliphist
-cowsay
 deluge
 deluge-gtk
-dmenu
+discord
 dos2unix
 dunst
 efivar
-element-desktop
 fastfetch
 fd
 ffmpegthumbnailer
@@ -49,7 +47,6 @@ jupyter-notebook
 kitty
 kvantum
 lazygit
-lf
 libgsf
 libindicator-gtk3
 linux
@@ -68,7 +65,6 @@ mpc
 mpd
 mpv
 mtools
-ncmpc
 ncmpcpp
 nemo
 neovim
@@ -118,7 +114,6 @@ slurp
 sof-firmware
 speech-dispatcher
 sudo
-swww
 texinfo
 texlive-binextra
 texlive-fontsrecommended

@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -W -Werror -pedantic -ansi -std=c11
+CFLAGS=-Wall -W -pedantic -ansi -std=c11
 
 install: splash.c
 	$(CC) $(CFLAGS) -o builds/splash splash.c

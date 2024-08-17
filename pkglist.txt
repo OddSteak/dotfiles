@@ -21,14 +21,12 @@ catppuccin-gtk-theme-mocha
 clang
 cliphist
 compiledb
-cowsay
 deluge
 deluge-gtk
-dmenu
+discord
 dos2unix
 dunst
 efivar
-element-desktop
 fastfetch
 fd
 ffmpegthumbnailer
@@ -58,7 +56,6 @@ jupyter-notebook
 kitty
 kvantum
 lazygit
-lf
 libgsf
 libindicator-gtk3
 linux
@@ -80,7 +77,6 @@ mpd-mpris-bin
 mpv
 mtools
 mullvad-vpn-bin
-ncmpc
 ncmpcpp
 nemo
 neovim
@@ -94,11 +90,9 @@ noto-fonts-lite
 npm
 nsxiv
 ntfs-3g
-nvidia-beta-dkms
 nwg-look
 obs-studio
 obsidian
-opencl-nvidia-550xx
 p7zip
 pacman-contrib
 pacutils
@@ -141,7 +135,6 @@ sonarr
 speech-dispatcher
 spotify
 sudo
-swww
 texinfo
 texlive-binextra
 texlive-fontsrecommended
@@ -162,7 +155,6 @@ vivid
 w3m
 waybar
 wd719x-firmware
-webcord-bin
 wev
 wf-recorder
 wget

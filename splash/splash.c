@@ -37,6 +37,9 @@ char* quotes[] = {
     "A little less than a human being",
     "Abandon All Hope, Ye Who Enter Here",
     "To rice, or not to rice, that is the question",
+    "Deserve ain't got anything to dew with it",
+    "Nobody gives a fuck about a 40 degree day",
+    "Money be green",
 };
 
 int main()
