@@ -109,6 +109,7 @@ poppler
 power-profiles-daemon
 powertop
 prowlarr
+pyenv
 python-bottleneck
 python-matplotlib
 python-numexpr
@@ -116,6 +117,7 @@ python-numpy
 python-pandas
 python-pandas-datareader
 python-pip
+python-pipenv
 python-pynvim
 python-qt-material
 qmk
@@ -127,6 +129,7 @@ rose-pine-cursor
 rose-pine-hyprcursor
 rstudio-desktop-bin
 rust
+sbctl
 scrot
 shellcheck
 slurp

@@ -30,6 +30,7 @@ char* list_dir[] = {
     "/home/dell/.config/nsxiv",
     "/home/dell/bin",
     "/home/dell/.bashrc",
+    "/home/dell/.zshrc",
     "/home/dell/learndev/c/backdots",
     "/home/dell/learndev/c/splash",
     "/home/dell/learndev/c/mm",

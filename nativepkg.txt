@@ -93,6 +93,7 @@ polkit-kde-agent
 poppler
 power-profiles-daemon
 powertop
+pyenv
 python-bottleneck
 python-matplotlib
 python-numexpr
@@ -100,6 +101,7 @@ python-numpy
 python-pandas
 python-pandas-datareader
 python-pip
+python-pipenv
 python-pynvim
 python-qt-material
 qmk
@@ -108,6 +110,7 @@ qt5ct
 qt6ct
 ripgrep
 rust
+sbctl
 scrot
 shellcheck
 slurp
