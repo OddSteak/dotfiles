@@ -63,6 +63,7 @@
         "format": "{}",
         "rewrite": {
             "(.*) — Mozilla Firefox": "$1 · 󰈹",
+            "(.*) — Zen Browser": "$1 · 󰈹",
             "(.*) - Youtube — Mozilla Firefox": "$1 · 󰗃 ",
             "(.*) - Discord": "$1 ·  ",
             "Wayland to X Recording bridge — Xwayland Video Bridge": "",
@@ -117,7 +118,7 @@
     "temperature": {
         "thermal-zone": 3,
         "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
-        "critical-threshold": 80,
+        "critical-threshold": 95,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", " "]

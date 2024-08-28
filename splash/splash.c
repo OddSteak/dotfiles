@@ -38,8 +38,11 @@ char* quotes[] = {
     "Abandon All Hope, Ye Who Enter Here",
     "To rice, or not to rice, that is the question",
     "Deserve ain't got anything to dew with it",
+    "We like them little bitches on the chessboard",
     "Nobody gives a fuck about a 40 degree day",
     "Money be green",
+    "How my hair look, Mike?",
+    "Segmentation fault (core dumped)",
 };
 
 int main()

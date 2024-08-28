@@ -238,9 +238,9 @@ mkcd() {
 fshare() {
   if [ $# -eq 0 ]
     then
-	  curl -F"file=@$(find ./ -type f | fzf -i)" http://sedentaryowl.xyz/static | wl-copy
+	  curl -F"file=@$(find ./ -type f | fzf -i)" http://0x0.st | wl-copy
     else
-	  curl -F"file=@$(find "$1/" -type f | fzf -i)" http://sedentaryowl.xyz/static | wl-copy
+	  curl -F"file=@$(find "$1/" -type f | fzf -i)" http://0x0.st | tr -d '\n' | wl-copy
   fi
 }
 
@@ -250,7 +250,7 @@ share() {
     then
 	  fshare
     else
-	  curl -F"file=@$1" http://sedentaryowl.xyz/static | wl-copy
+	  curl -F"file=@$1" http://0x0.st | tr -d '\n' | wl-copy
   fi
 }
 
@@ -259,9 +259,14 @@ fpatch() {
 }
 
 zat() {
-    zathura "$1" &
+    zathura "$1" &!
+}
+
+rebar() {
+    killall waybar; waybar &!
 }
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval $(thefuck --alias)

@@ -74,15 +74,12 @@ int main(int argc, char** argv)
                 sleep(10 * 60);
 
                 if (is_cancelled) {
-
                     notify_notification_close(warnNotif, NULL);
                     warn("backdots", "backup cancelled", 1000 * 5);
                     printf("backup cancelled\n");
                     is_cancelled = false;
                     sleep(6 * 60 * 60);
-
                 } else {
-
                     printf("backup starting...\n");
                     backup();
                     printf("backup complete\n");
@@ -182,7 +179,7 @@ void copyfile(char* source, char* destination)
             wrote = fwrite(buffer, 1, got, fp_out);
             if (wrote != got) {
                 fprintf(stdout, "error copying file\n");
-                fprintf(stdout, "%s -> %s\n",  source, destination);
+                fprintf(stdout, "%s -> %s\n", source, destination);
             }
         }
     }

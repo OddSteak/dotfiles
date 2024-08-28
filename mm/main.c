@@ -141,6 +141,7 @@ void makefile(char* dir, char* stripped_name, char** av)
         pid_t pid = fork();
 
         if (pid == 0) {
+            av[0] = stripped_name;
             execvp(run_cmd, av);
             printf("skill issues\n");
         } else {

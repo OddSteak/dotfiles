@@ -7,6 +7,7 @@ base-devel
 bear
 biber
 blueberry
+blueman
 bluez-utils
 breeze
 breeze-gtk
@@ -25,8 +26,10 @@ fd
 ffmpegthumbnailer
 firefox
 firewalld
+foliate
 fontforge
 fzf
+gcc-fortran
 gdb
 gdu
 gimp
@@ -52,7 +55,6 @@ libindicator-gtk3
 linux
 linux-firmware
 linux-firmware-qlogic
-linux-headers
 lsof
 lua
 luarocks
@@ -109,6 +111,7 @@ qt5-wayland
 qt5ct
 qt6ct
 ripgrep
+rofi-wayland
 rust
 sbctl
 scrot
@@ -117,13 +120,17 @@ slurp
 sof-firmware
 speech-dispatcher
 sudo
+tesseract-data-eng
 texinfo
 texlive-binextra
 texlive-fontsrecommended
 texlive-latex
+texlive-latexextra
+thefuck
 tldr
 tmux
 transmission-cli
+trash-cli
 tree
 ttf-dejavu
 ttf-liberation
@@ -132,6 +139,7 @@ unzip
 vi
 vim
 vivid
+vulkan-intel
 w3m
 waybar
 wev
@@ -139,6 +147,7 @@ wf-recorder
 wget
 wireplumber
 wl-clipboard
+wmctrl
 wofi
 xclip
 xdg-desktop-portal-gtk
@@ -149,8 +158,7 @@ xorg-xrdb
 yazi
 yt-dlp
 zathura
-zathura-pdf-poppler
-zed
+zathura-pdf-mupdf
 zellij
 zig
 zsh

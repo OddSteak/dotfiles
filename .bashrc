@@ -134,3 +134,4 @@ fpatch() {
 zat() {
     zathura "$1" &
 }
+
