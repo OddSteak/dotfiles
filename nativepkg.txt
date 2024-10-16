@@ -1,9 +1,12 @@
 alacritty
 arm-none-eabi-gcc
+atomicparsley
 avr-gcc
 avr-libc
 base
 base-devel
+bat
+batsignal
 bear
 biber
 blueberry
@@ -38,10 +41,13 @@ gnome-keyring
 go
 gparted
 grim
+helvum
 htop
+hunspell-en_au
 hyprland
 hyprlock
 hyprpaper
+hyprpicker
 intel-ucode
 jdk17-openjdk
 jellyfin-server
@@ -52,6 +58,7 @@ kvantum
 lazygit
 libgsf
 libindicator-gtk3
+libreoffice-fresh
 linux
 linux-firmware
 linux-firmware-qlogic
@@ -104,6 +111,7 @@ python-pandas
 python-pandas-datareader
 python-pip
 python-pipenv
+python-pycryptodomex
 python-pynvim
 python-qt-material
 qmk
@@ -120,12 +128,14 @@ slurp
 sof-firmware
 speech-dispatcher
 sudo
+swww
 tesseract-data-eng
 texinfo
 texlive-binextra
 texlive-fontsrecommended
 texlive-latex
 texlive-latexextra
+texlive-plaingeneric
 thefuck
 tldr
 tmux
@@ -136,6 +146,7 @@ ttf-dejavu
 ttf-liberation
 typescript
 unzip
+veracrypt
 vi
 vim
 vivid

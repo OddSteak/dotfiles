@@ -225,10 +225,12 @@ open() {
 getpath() {
   if [ $# -eq 0 ]
     then
-      find . -type f | fzf -i | sed 's/^..//' | tr -d '\n' | clip.exe
+        filep=$(find -L . \( -type f -o -type l \) | fzf -i | sed 's/^..//' | tr -d '\n')
     else
-      find "$1/" -type f | fzf -i | tr -d '\n' | clip.exe
+        filep=$(find -L "$1/" \( -type f -o -type l \) | fzf -i | tr -d '\n')
   fi
+  echo -n \"$filep\" | wl-copy
+  unset filep
 }
 
 mkcd() {
@@ -259,14 +261,17 @@ fpatch() {
 }
 
 zat() {
-    zathura "$1" &!
+  zathura "$1" &!
 }
 
 rebar() {
     killall waybar; waybar &!
 }
+jconvert() {
+    jupyter nbconvert --no-prompt --to script "$1"
+}
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 eval $(thefuck --alias)
+
+# ssh-agent
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
