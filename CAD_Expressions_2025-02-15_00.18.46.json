@@ -1,0 +1,652 @@
+{
+  "default": [
+    {
+      "expression": "*.adventofcode.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "hqhVbpk3V"
+    },
+    {
+      "expression": "*.airasia.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "DzLhKGE_2z"
+    },
+    {
+      "expression": "*.amazon.com.au",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "cxDA1km1Oo"
+    },
+    {
+      "expression": "*.auth.openai.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Z4kDNp4zyc"
+    },
+    {
+      "expression": "*.auth0.openai.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "S4BheOACz7"
+    },
+    {
+      "expression": "*.chatgpt.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ZY0NXIc2CL"
+    },
+    {
+      "expression": "*.chess.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "JjNy3B0YkR"
+    },
+    {
+      "expression": "*.claude.ai",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "5XLErXzBS_"
+    },
+    {
+      "expression": "*.cloud.oracle.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "7Vc7nMH8uK"
+    },
+    {
+      "expression": "*.discord.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "YQW3GVQjcJ"
+    },
+    {
+      "expression": "*.edclub.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "_ZiC3J-_kt"
+    },
+    {
+      "expression": "*.en.wikipedia.org",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "wc58Zk2rq"
+    },
+    {
+      "expression": "*.flatmates.com.au",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "xvLx2iXnzv"
+    },
+    {
+      "expression": "*.flipkart.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "1tiqWiGQkE"
+    },
+    {
+      "expression": "*.github.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "A0orXMFOEd"
+    },
+    {
+      "expression": "*.google.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "v5ZXFttZLf"
+    },
+    {
+      "expression": "*.hotstar.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "MCvbc9Wn6L"
+    },
+    {
+      "expression": "*.leetcode.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "DsMhGVQMh"
+    },
+    {
+      "expression": "*.lichess.org",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "tBzZfNZ87j"
+    },
+    {
+      "expression": "*.lms.uwa.edu.au",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "yQhw1rYT4k"
+    },
+    {
+      "expression": "*.localhost",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "UvFD21nUAvB"
+    },
+    {
+      "expression": "*.login.microsoftonline.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "QAto4cNaLPY"
+    },
+    {
+      "expression": "*.microsoftonline.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Y8wH1zQ2IYp"
+    },
+    {
+      "expression": "*.netflix.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "v9w1cmFwWad"
+    },
+    {
+      "expression": "*.office.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "sw4ZtR7qf6E"
+    },
+    {
+      "expression": "*.openai.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "dTP3d6Dki0M"
+    },
+    {
+      "expression": "*.oracle.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "pIszMqtk7OV"
+    },
+    {
+      "expression": "*.outlook.office.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "LibKAT1YE-Z"
+    },
+    {
+      "expression": "*.primevideo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "I87NLd0o3lM"
+    },
+    {
+      "expression": "*.reddit.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "qDO9Y2MrS8B"
+    },
+    {
+      "expression": "*.searx.be",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "GIfIXIUEhOj"
+    },
+    {
+      "expression": "*.sedentaryowl.xyz",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "1bm170T18Qh"
+    },
+    {
+      "expression": "*.trakt.tv",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ksdsIw5wVZY"
+    },
+    {
+      "expression": "*.twitch.tv",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "BMRoILuJlOb"
+    },
+    {
+      "expression": "*.usevia.app",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "iSu3ospqpHw"
+    },
+    {
+      "expression": "*.uwa.edu.au",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "nar_JqLyn46"
+    },
+    {
+      "expression": "*.watchtheofficetv.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "kvMleqjbgku"
+    },
+    {
+      "expression": "*.wikipedia.org",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "DduiaIkoQ"
+    },
+    {
+      "expression": "*.zed.dev",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "HBD8-OvuHsm"
+    },
+    {
+      "expression": "*.zlibrary-au.se",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "hCGkifR44JF"
+    },
+    {
+      "expression": "127.0.0.1",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Yx_DKiI6X0w"
+    },
+    {
+      "expression": "adventofcode.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "gzmvd3mm-1-"
+    },
+    {
+      "expression": "airasia.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "pQKEp1w90DH"
+    },
+    {
+      "expression": "amazon.com.au",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "JzJ8ydu4x1M"
+    },
+    {
+      "expression": "auth.openai.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "RR0pe5I5l9b"
+    },
+    {
+      "expression": "auth0.openai.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "hqk-LKfqH2O"
+    },
+    {
+      "expression": "chat.openai.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ut4uEB_jc0P"
+    },
+    {
+      "expression": "chatgpt.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "SQqe3gID1ZX"
+    },
+    {
+      "expression": "chess.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "vhueQCGoWto"
+    },
+    {
+      "expression": "claude.ai",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "oMLXAYvBD1O"
+    },
+    {
+      "expression": "cloud.oracle.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "h6lwLq3ERAl"
+    },
+    {
+      "expression": "discord.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "9oUAFNHdvL3"
+    },
+    {
+      "expression": "edclub.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Nb_xu50EQ"
+    },
+    {
+      "expression": "en.wikipedia.org",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "O-W5bzRcP"
+    },
+    {
+      "expression": "excalidraw.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "uPWxEMqIUDL"
+    },
+    {
+      "expression": "flatmates.com.au",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "9S1PESrb-"
+    },
+    {
+      "expression": "flipkart.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "MqRJNywUzlE"
+    },
+    {
+      "expression": "github.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Ckp-2vWR2ml"
+    },
+    {
+      "expression": "google.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "X99svukMcxF"
+    },
+    {
+      "expression": "hotstar.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "eZ7xxAV6MbD"
+    },
+    {
+      "expression": "kick.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "ZMLVh9prUOL"
+    },
+    {
+      "expression": "leetcode.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "nB5vXa2OQ"
+    },
+    {
+      "expression": "lichess.org",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "nfJcqQK9QBp"
+    },
+    {
+      "expression": "lms.uwa.edu.au",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "Gz8MTZaj1w6"
+    },
+    {
+      "expression": "localhost",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "7AKJJg5Z6-4"
+    },
+    {
+      "expression": "login.microsoftonline.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "IzEJkg1fs4Q"
+    },
+    {
+      "expression": "monkeytype.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "9NXXQbvGUeP"
+    },
+    {
+      "expression": "netflix.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "pbl-sl3Xs5X"
+    },
+    {
+      "expression": "office.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "1yhnA9ikA-M"
+    },
+    {
+      "expression": "outlook.office.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "woelPYctM-U"
+    },
+    {
+      "expression": "primevideo.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "2ZTIUusnoCW"
+    },
+    {
+      "expression": "quiz.jinhong.org",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "SnFB0rF20eB"
+    },
+    {
+      "expression": "reddit.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "uAUz8s1ajaE"
+    },
+    {
+      "expression": "searx.be",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "TctOmnfDmUz"
+    },
+    {
+      "expression": "sedentaryowl.xyz",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "uyoiKuX5Wyg"
+    },
+    {
+      "expression": "trakt.tv",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "E4297u-tI1Y"
+    },
+    {
+      "expression": "twitch.tv",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "X3gPfgv2C3s"
+    },
+    {
+      "expression": "usevia.app",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "GJQqRci3nFY"
+    },
+    {
+      "expression": "watchtheofficetv.com",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "c2P86YMkoOY"
+    },
+    {
+      "expression": "zed.dev",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "DQi0zLUIg-k"
+    },
+    {
+      "expression": "zlibrary-au.se",
+      "listType": "WHITE",
+      "storeId": "default",
+      "cleanSiteData": [],
+      "cookieNames": [],
+      "id": "f9Ywm_H55dN"
+    }
+  ]
+}
