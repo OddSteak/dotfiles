@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir /mnt/diary
+veracrypt --mount ~/diary.vc /mnt/diary

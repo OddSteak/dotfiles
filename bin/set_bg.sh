@@ -1,4 +1,5 @@
 #!/bin/bash
-wp_path=$HOME/pics/papes/
-image=$(ls $wp_path | grep -E '(jpg|png|jpeg)$' | shuf -n 1)
-xwallpaper --zoom $wp_path/$image
+wp_path=$HOME/papes
+image=$(find "$wp_path" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) | shuf -n 1)
+echo "$image"
+swww img "$image"

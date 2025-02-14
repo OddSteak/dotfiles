@@ -1,0 +1,6 @@
+#!/bin/bash
+
+hyprctl dispatch workspace +1
+killall electron
+veracrypt -d ~/diary.vc
+rm -r /mnt/diary
