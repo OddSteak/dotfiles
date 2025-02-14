@@ -148,7 +148,7 @@ alias l='ls -CF'
 # programs
 alias gs='git status'
 alias ga='git add .'
-alias gc='git commit -am'
+alias gc='git commit -m'
 alias g="git"
 alias lg="lazygit"
 alias wman=w3mman

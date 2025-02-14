@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/uwa/sem2_2024/cits2002/sim ~/uwa/sem2_2024/cits2002/runml ~/uwa/sem2_2024/cits2211/assign2 ~/uwa/sem2_2024/stat2402/assign2 ~/uwa/sem2_2024/cits2402 ~/uwa/sem2_2024/cits2002/src ~/dev/neet ~/dev/clipper/api ~/dev/qmk_wireless ~/learndev/c ~/resume ~ ~/.config ~/.config/nvim ~/.config/hypr -maxdepth 0 -type d | fzf)
+    selected=$(find ~/uwa/sem2_2024/stat2402/exam ~/uwa/sem2_2024/cits2402 ~/uwa/sem2_2024/cits2002/src ~/dev/neet ~/dev/clipper/api ~/dev/qmk_wireless ~/learndev/c ~/resume ~ ~/.config ~/.config/nvim ~/.config/hypr -maxdepth 0 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
